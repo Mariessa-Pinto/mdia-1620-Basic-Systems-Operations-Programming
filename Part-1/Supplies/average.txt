@@ -1,0 +1,4 @@
+var erasers = 2;
+var cables = 4;
+var pens = 8;
+var suppliesAverage = (erasers + cables + pens)/3;
