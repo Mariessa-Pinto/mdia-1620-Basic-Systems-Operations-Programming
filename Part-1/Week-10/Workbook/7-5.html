@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON</h2>
+
+<div id="person"></div>
+<script>
+var login = "Director";
+
+var message = (login == 'Employee') ? 'Hello'
+:(login == 'Director') ? 'Greetings': (login == '') ? 'No login':
+'';
+
+console.log(message);
+
+document.getElementById("person").innerHTML = message; 
+
+</script>
+</body>
+</html>

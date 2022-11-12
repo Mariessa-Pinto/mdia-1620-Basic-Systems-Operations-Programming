@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON</h2>
+
+<div id="score"></div>
+<script>
+
+try{
+    var marks = prompt('Enter your marks:');
+
+    //check the condition 
+
+    if(isNaN(marks)){
+        throw "not a number";
+    }
+    var result = (marks >= 50) ? 'pass':'fail';
+
+    console.log(`You ${result} the exam.`);
+
+    document.getElementById("score").innerHTML = "Because of your mark you: " + result;
+} catch(err){
+    console.log(err);
+}
+
+</script>
+</body>
+</html>
